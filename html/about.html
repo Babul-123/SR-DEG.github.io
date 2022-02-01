@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>about</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <a href="../index.html" class="logo">SR-DEG.</a>
+
+   <nav class="navbar">
+      <a href="../index.html">home</a>
+      <a href="./about.html">about</a>
+      <a href="./services.html">services</a>
+      <a href="./contact.html">contactus</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends -->
+
+<div class="heading" style="background:url(../images/pexels-daniel-putzer-633409.jpg) no-repeat">
+   <h1>about us</h1>
+</div>
+
+<!-- about section starts  -->
+
+<section class="about">
+
+   <div class="image">
+      <img src="../images/About.jpg" alt="">
+   </div>
+
+   <div class="content">
+      <h3>why choose us?</h3>
+      <p>We providing highquality design which made in adobe softwares. u can easily edit and customize in your own way in canva with very minimum cost</p>
+      <p>u can also email us for any design</p>
+      <a href="" style="font-size: 20px;">Email</a>
+      <div class="icons-container">
+         <div class="icons">
+            <i class="fas fa-map"></i>
+            <span>top destinations</span>
+         </div>
+         <div class="icons">
+            <i class="fas fa-hand-holding-usd"></i>
+            <span>affordable price</span>
+         </div>
+         <div class="icons">
+            <i class="fas fa-headset"></i>
+            <span>24/7 guide service</span>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews">
+
+   <h1 class="heading-title"> feedback and reviews </h1>
+
+   <div class="con">
+      <div class="post">
+         <div class="text">Thanks for rating us!</div>
+         <div class="edit">EDIT</div>
+      </div>
+      <div class="star-widget">
+         <input type="radio" name="rate" id="rate-5">
+         <label for="rate-5" class="fas fa-star"></label>
+         <input type="radio" name="rate" id="rate-4">
+         <label for="rate-4" class="fas fa-star"></label>
+         <input type="radio" name="rate" id="rate-3">
+         <label for="rate-3" class="fas fa-star"></label>
+         <input type="radio" name="rate" id="rate-2">
+         <label for="rate-2" class="fas fa-star"></label>
+         <input type="radio" name="rate" id="rate-1">
+         <label for="rate-1" class="fas fa-star"></label>
+         <form action="#">
+            <header></header>
+            <div class="textarea">
+               <textarea cols="30" placeholder="Describe your experience.."></textarea>
+            </div>
+            <div class="ttn">
+               <button type="submit">Post</button>
+            </div>
+         </form>
+      </div>
+   </div>
+   <script>
+      const ttn = document.querySelector("button");
+      const post = document.querySelector(".post");
+      const widget = document.querySelector(".star-widget");
+      const editBtn = document.querySelector(".edit");
+      ttn.onclick = ()=>{
+         widget.style.display = "none";
+         post.style.display = "block";
+         editBtn.onclick = ()=>{
+            widget.style.display = "block";
+            post.style.display = "none";
+         }
+         return false;
+      }
+   </script>
+   
+</section>
+
+<!-- reviews section ends -->
+
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="../index.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="./about.html"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="./services.html"> <i class="fas fa-angle-right"></i> services</a>
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> 9668186562 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> satyabratarath26@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> odisha, india</a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <!-- <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a> -->
+         <!-- <a href="#"> <i class="fab fa-twitter"></i> twitter </a> -->
+         <!-- <a href="#"> <i class="fab fa-instagram"></i> instagram </a> -->
+         <!-- <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a> -->
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>satyabrata rath</span> | </div>
+
+</section>
